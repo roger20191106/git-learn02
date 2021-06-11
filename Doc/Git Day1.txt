@@ -30,3 +30,23 @@ git status 检查工作目录现在的状况（新增、修改、删除）
 
 使用sourcetre，方便图形查看
 
+
+git clone https://aliang1211@bitbucket.org/aliang1211/gitlearn.git
+git remote add origin https://aliang1211@bitbucket.org/aliang1211/gitlearn.git
+git push -u origin master
+
+git clone https://aliang1211@bitbucket.org/aliang1211/git20210611.git
+git remote add origin https://aliang1211@bitbucket.org/aliang1211/git20210611.git
+
+******************************************************************
+non-fast forward 的意思是本機commit和遠端的不相同，本地和遠端的Repository發生文件衝突問題
+
+可以用git push -f 強制覆蓋本地文件替代git儲存庫的內容。
+
+Google關鍵字在stackoverflow找到的解法是
+git push -f origin <branch>。
+
+-f代表force：強制推送。如果不想把遠端分支的更動合併（merge）到本地分支，則可以使用這個指令。但要小心使用。
+*******************************************************************
+
+更新远端数据库：
