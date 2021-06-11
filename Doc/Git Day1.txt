@@ -1,0 +1,29 @@
+Git 学习第一天 2021/06/11
+
+在D: Mkdir GitProject
+用 git-bash
+git 中
+1. cd d:/GitProject
+2. git init， 开始追踪本文件夹
+3. git global
+	git config --global user.name "Roger.Huang"
+	git config --global user.email "roger.huang@ameda.com"
+	git config --list
+
+-- Mac上可以以使用 iTerm2 终端机
+-- iterm2 配色 “iterm2 + oh-my-zsh配色”
+
+Git 常用指令
+- 初始化数据库：git init
+- 查询当前状况：git status
+- 将档案加入到索引： git add .
+- 将索引档案变成一个更新（commit）：git commit -m “修改内容”
+- 观察commit历史记录： git log
+下载远端数据库： git clone 数据库网址
+更新远端数据库： git push origin master
+
+
+Git的架构
+工作目录 <-->  索引  <---> 本地数据库 <---> 远端数据库
+
+git status 检查工作目录现在的状况（新增、修改、删除）
